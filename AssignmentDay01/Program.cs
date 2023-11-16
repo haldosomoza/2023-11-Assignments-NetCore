@@ -1,4 +1,4 @@
-﻿using Assignments;
+﻿using Assignment;
 
 Console.WriteLine("= = = = = Console App to Get Fibonacci Series = = = = =\n");
 
