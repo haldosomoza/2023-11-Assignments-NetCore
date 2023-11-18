@@ -1,24 +1,43 @@
 *.swp
 *.*~
-project.lock.json
 .DS_Store
+Thumbs.db
+.thumbnails/
+
+# Python
 *.pyc
+__pycache__/
+*.ipynb_checkpoints/
+.pytest_cache/
+*.pyo
+*.pyd
+
+# IDEs
+.vs/
+.vscode/
+.idea/
+*.sublime-project
+
+# Environments
+.env
+.env.*
+venv/
+env/
+.venv/
+project.lock.json
+
+# Dependencies
+lib/
+lib64/
+bin/
+include/
+*.egg-info/
 nupkg/
 
-# Visual Studio Code
-.vscode/
-
-# Rider
-.idea/
-
-# Visual Studio
-.vs/
-
-# Fleet
-.fleet/
-
-# Code Rush
-.cr/
+# Logs and Temporary Files
+*.log
+*.bak
+*.swp
 
 # User-specific files
 *.suo

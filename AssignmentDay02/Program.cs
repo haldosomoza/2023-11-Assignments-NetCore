@@ -90,7 +90,7 @@ while (true)
 Console.ForegroundColor = ConsoleColor.Red;
 Console.WriteLine($"""
 
-    = = = = = Exiting Online Bookstore = = = = =");
+    = = = = = Exiting Online Bookstore = = = = ="
     = = = = = Thank you {CustomerName} for shopping with us = = = = =
     """);
 Console.ForegroundColor = ConsoleColor.White;
