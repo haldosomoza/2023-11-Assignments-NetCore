@@ -17,24 +17,6 @@ namespace BookstoreSystem
             _Inventory.Add(new    FictionBook("Dystopian", "1984",                                  "George Orwels",       16.99));
             _Inventory.Add(new NonFictionBook("Biography", "Extraordinary Women In History",        "Leah Gail",           15.52));
         }
-
-        public List<String> DisplayMenu()
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            string TextToWrite = """
-
-                BOOKSTORE MENU
-                1. Browse Books
-                2. Add Books to Cart
-                3. Apply Discounts
-                4. View Order
-                5. Exit
-
-                """;
-            Console.WriteLine(TextToWrite);
-            return new List<String> { "1", "2", "3", "4", "5" };
-        }
-
         public List<Book> GetInventory()
         {
             return _Inventory;

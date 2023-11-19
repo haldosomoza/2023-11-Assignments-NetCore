@@ -12,7 +12,7 @@ string CustomerName = AskUser("Enter Your Name (Customer Name): ");
 
 Bookstore TheBookstore = new Bookstore();
 Order     TheOrder     = new Order(CustomerName);
-List<String> MenuOptions = TheBookstore.DisplayMenu();
+List<String> MenuOptions = DisplayMenu();
 List<String> BookOptions = new List<String>();
 while (true)
 {
@@ -96,6 +96,23 @@ Console.WriteLine($"""
 Console.ForegroundColor = ConsoleColor.White;
 
 // === === === === === === ===
+
+List<String> DisplayMenu()
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    string TextToWrite = """
+
+                BOOKSTORE MENU
+                1. Browse Books
+                2. Add Books to Cart
+                3. Apply Discounts
+                4. View Order
+                5. Exit
+
+                """;
+    Console.WriteLine(TextToWrite);
+    return new List<String> { "1", "2", "3", "4", "5" };
+}
 
 string AskUser(string question, List<String>? AllowedValueList = null)
 {
